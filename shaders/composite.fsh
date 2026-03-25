@@ -8,5 +8,5 @@ in vec2 texcoord;
 layout(location = 0) out vec4 color;
 
 void main() {
-	color = texture(colortex0, texcoord);
+	color =  vec4(texture(colortex0, 1 - texcoord).r, texture(colortex0, 1 - texcoord + 0.01).g, texture(colortex0, 1 - texcoord - 0.01).b, 1.0);
 }
