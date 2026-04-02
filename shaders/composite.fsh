@@ -3,10 +3,24 @@
 uniform sampler2D colortex0;
 
 in vec2 texcoord;
+const int flip = 0;
+const int colshift = 0;
 
 /* RENDERTARGETS: 0 */
 layout(location = 0) out vec4 color;
 
 void main() {
-	color =  vec4(texture(colortex0, 1 - texcoord).r, texture(colortex0, 1 - texcoord + 0.01).g, texture(colortex0, 1 - texcoord - 0.01).b, 1.0);
+	vec2 uv = texcoord;
+
+	if (flip == 1){
+		uv.y = 1.0 - uv.y;
+	}
+
+
+	color =  vec4(
+		texture(colortex0, uv).r,
+		texture(colortex0, uv + colshift).g,
+		texture(colortex0, uv - colshift).b,
+		1.0
+	);
 }

@@ -1,25 +1,25 @@
 {
-    "files.associations": {
-        "*.fsh": "glsl",
-        "*.vsh": "glsl"
-    },
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/.DS_Store": true,
-        "**/Thumbs.db": true,
-        ".gradle": true,
-        ".gradle-user": true,
-        ".tmp-iris": true,
-        "build/devlibs": true,
-        "build/libs": true,
-        "build/loom-cache": true,
-        "build/processIncludeJars": true,
-        "build/reports": true,
-        "build/tmp": true
-    },
-    "cSpell.words": [
-        "colortex"
-    ]
+  "files.associations": {
+    "*.fsh": "glsl",
+    "*.vsh": "glsl"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    ".gradle": true,
+    ".gradle-user": true,
+    ".tmp-iris": true,
+    "build/devlibs": true,
+    "build/libs": true,
+    "build/loom-cache": true,
+    "build/processIncludeJars": true,
+    "build/reports": true,
+    "build/tmp": true
+  },
+  "cSpell.words": ["colortex"],
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.configuration.updateBuildConfiguration": "interactive"
 }
