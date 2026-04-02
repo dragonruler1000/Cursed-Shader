@@ -11,13 +11,16 @@ in vec4 glcolor;
 
 
 
-/* RENDERTARGETS: 0 */
+/* RENDERTARGETS: 0, 1 */
 layout(location = 0) out vec4 color;
+
 
 void main() {
 	// color = texture(gtexture, texcoord) * glcolor;
 	// color *= texture(lightmap, lmcoord);
 	color = vec4(lmcoord, 0.0, 1.0);
+
+
 	if (color.a < alphaTestRef) {
 		discard;
 	}

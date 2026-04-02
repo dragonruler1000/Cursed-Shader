@@ -1,6 +1,7 @@
 #version 330 compatibility
 
 uniform sampler2D colortex0;
+uniform sampler2D colortex1;
 
 in vec2 texcoord;
 const int flip = 0;
@@ -15,6 +16,7 @@ void main() {
 	if (flip == 1){
 		uv.y = 1.0 - uv.y;
 	}
+
 
 
 	color =  vec4(
