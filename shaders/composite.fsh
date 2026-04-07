@@ -4,8 +4,8 @@ uniform sampler2D colortex0;
 uniform sampler2D colortex1;
 
 in vec2 texcoord;
-#define int flip = 0;
-#define int colshift = 0;
+uniform int flip = 0;
+#define uniform int colshift = 0;
 uniform float aberation = 0;
 
 /* RENDERTARGETS: 0 */

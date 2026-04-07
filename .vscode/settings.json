@@ -19,7 +19,11 @@
     "build/reports": true,
     "build/tmp": true
   },
-  "cSpell.words": ["colortex"],
+  "cSpell.words": [
+    "colortex",
+    "glcolor",
+    "gtexture"
+  ],
   "java.compile.nullAnalysis.mode": "automatic",
   "java.configuration.updateBuildConfiguration": "interactive"
 }
